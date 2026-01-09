@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devashish's Webpage</title>
+    <meta name="description" content="Machine Learning and NLP researcher specializing in LLM experiments and deep learning.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/Block_M-Hex.png">
+    <link rel="apple-touch-icon" href="assets/images/Block_M-Hex.png">
+    
+    <!-- p5.js for neural network animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><span class="accent">DJ</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div id="neural-canvas-container"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hey there, I'm</p>
+            <h1 class="hero-title">Devashish Juyal</h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Graduate Student at University of Michigan</span>
+                <span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+            I study/work at the intersection of 
+            <span class="highlight">Machine Learning</span>, 
+            <span class="highlight">Language Models</span>, and 
+            <span class="highlight">Statistics</span>, 
+            trying to understand how models actually learn.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">See Projects</a>
+                <a href="#contact" class="btn btn-secondary">See Contact</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll to see more!</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/images/IMG_6149.jpg" alt="Devashish Juyal" onerror="this.style.display='none'">
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="about-content">
+                    <p class="about-intro">
+                        I’m a graduate student who’s slowly growing into an engineer; the kind who cares about 
+                        what’s happening under the hood, not just what the model outputs.
+                    </p>
+
+                    <p class="about-text">
+                        That mindset took shape during my undergrad at MNIT Jaipur and deepened during my graduate 
+                        studies at the University of Michigan -- Ann Arbor. Along the way, curiosity turned into a habit of 
+                        building systems that make sense of real-world data — especially using machine learning.
+
+                        Recently, my work has centered on understanding when and why models make decisions, 
+                        with a blend of language models. I’ve worked on ML-based sequential detection, 
+                        watermarking of LLMs, distillation of small language models, and even 
+                        a causality-driven trading engine. Across projects, the goal stays the same: making models 
+                        more reliable, interpretable, and grounded.
+                    </p>
+
+                    <div class="about-facts">
+                        <div class="fact">
+                            <span class="fact-number">5+</span>
+                            <span class="fact-label">Years spent with ML</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">7</span>
+                            <span class="fact-label">Projects Built</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">4</span>
+                            <span class="fact-label">Internships</span>
+                        </div>
+                        
+                    </div>
+
+                        <ul class="interest-list">
+                            <li><img src="assets/images/MU.D-7d8b6366.png" class="interest-icon" alt="Micron"> Micron Technology</li>
+                            <li><img src="assets/images/UMLogo.png" class="interest-icon" alt="UMich"> University of Michigan, Ann Arbor</li>
+                            <li><img src="assets/images/Indian_Space_Research_Organisation_Logo.svg.png" class="interest-icon" alt="ISRO"> Indian Space Research Organization</li>
+                            <li><img src="assets/images/Mnit_logo.png" class="interest-icon" alt="NIT Jaipur"> National Institute of Technology, Jaipur</li>
+                            <li><img src="assets/images/sameer-transparent.png" class="interest-icon" alt="SAMEER"> SAMEER's 5G Centre</li>
+                            <li><img src="assets/images/UniversityofAlberta-logo.jpg" class="interest-icon" alt="UAlberta"> University of Alberta, Edmonton</li>
+
+                            <p class="interest-heading">⬆️ Places I have worked at!</p>
+                            <p class="interest-heading">⬆️ Places I have studied at!</p>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">ML</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="llm">LLM</button>
+                
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="llm">
+                    <div class="project-image">
+                        <img src="assets/img/projects/rag-system.jpg" alt="RAG System" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">LLM</span>
+                        <h3 class="project-title">UMichSLM</h3>
+                        <p class="project-description">
+                            We are building Univeristy of Michigan's first Small Language Model (~3B parameters) from scratch, implementing
+                            modern day techniques of Language Model training.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>HuggingFace</span>
+                            <span>LLaMA</span>
+                            <span>Wandb</span>
+                        </div>
+                    </div>
+                </article>
+                
+
+                        <div class="project-card" data-category="nlp">
+                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">NLP / LLM</span>
+                                <h3 class="project-title">Explain it Like I'm a Small Language Model</h3>
+                                <p class="project-description">Multi-stage LLM distillation pipeline (7B→1.5B→0.5B) achieving 22.8% lower perplexity and +8.6% Top-1 accuracy over direct distillation using teacher assistant models.</p>
+                                <div class="project-tech">
+                                    <span>PyTorch</span>
+                                    <span>Transformers</span>
+                                    <span>Knowledge Distillation</span>
+                                    <span>LLM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2: CRISP -->
+                        <div class="project-card" data-category="ml">
+                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">ML / Finance</span>
+                                <h3 class="project-title">CRISP: Contextual Risk-Invariant Stock Prediction</h3>
+                                <p class="project-description">Stock prediction engine using Invariant Risk Minimization achieving 30%+ improvement over ERM baselines on OOD testing by learning causal features across market shifts.</p>
+                                <div class="project-tech">
+                                    <span>IRM</span>
+                                    <span>PyTorch</span>
+                                    <span>Time Series</span>
+                                    <span>Causal ML</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3: Narrative Surprise -->
+                        <div class="project-card" data-category="nlp">
+                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">NLP</span>
+                                <h3 class="project-title">Measuring Narrative Surprise with LLMs</h3>
+                                <p class="project-description">End-to-end NLP pipeline using GPT-5 for narrative prediction and plot twist detection via embedding-based semantic divergence and RoBERTa-MNLI contradiction detection.</p>
+                                <div class="project-tech">
+                                    <span>GPT-5</span>
+                                    <span>RoBERTa</span>
+                                    <span>NLI</span>
+                                    <span>Embeddings</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 4: NFL Analytics -->
+                        <div class="project-card" data-category="data">
+                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Data Engineering</span>
+                                <h3 class="project-title">NFL Performance Analytics Database</h3>
+                                <p class="project-description">Normalized SQL database for NFL analytics with 5,000+ performances across 250+ games, featuring Python ETL pipeline and complex multi-table queries for player and team analysis.</p>
+                                <div class="project-tech">
+                                    <span>SQL</span>
+                                    <span>Python</span>
+                                    <span>ETL</span>
+                                    <span>Data Modeling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-cta">
+                        <a href="https://github.com/yourusername" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-github"></i> View All on GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills" id="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">02</span>
+                        <h2 class="section-title">Skills & Expertise</h2>
+                    </div>
+                    
+                    <div class="skills-compact">
+                        <div class="skill-group">
+                            <h4><i class="fas fa-brain"></i> ML & AI</h4>
+                            <div class="skill-tags">
+                                <span>PyTorch</span>
+                                <span>TensorFlow</span>
+                                <span>scikit-learn</span>
+                                <span>HuggingFace</span>
+                                <span>LLMs</span>
+                                <span>NLP</span>
+                                <span>RAG</span>
+                                <span>LangChain</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4><i class="fas fa-code"></i> Languages & Frameworks</h4>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>TypeScript</span>
+                                <span>Flask</span>
+                                <span>Vue</span>
+                                <span>Angular</span>
+                                <span>APIs</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4><i class="fas fa-database"></i> Data & Infrastructure</h4>
+                            <div class="skill-tags">
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>Spark</span>
+                                <span>Hadoop</span>
+                                <span>Snowflake</span>
+                                <span>CUDA</span>
+                                <span>SLURM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4><i class="fas fa-tools"></i> Tools & Workflow</h4>
+                            <div class="skill-tags">
+                                <span>Git</span>
+                                <span>Wandb</span>
+                                <span>Agile</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="honors-section">
+                        <h4><i class="fas fa-award"></i> Honors & Positions</h4>
+                        <div class="honors-list">
+                            <span class="honor-item"><i class="fas fa-trophy"></i> $8K MITACS Fellowship</span>
+                            <span class="honor-item"><i class="fas fa-briefcase"></i> Tech Consultant, ITS UMich</span>
+                            <span class="honor-item"><i class="fas fa-users"></i> AVP Corporate Relations, IEEE</span>
+                            <span class="honor-item"><i class="fas fa-chalkboard-teacher"></i> Grader EECS-330, EECS-455</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Get in Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always interested in discussing new projects, collaborations, 
+                    & opportunities in ML space. Feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:juyal@umich.edu" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>juyal@umich.edu</span>
+                    </a>
+                    <a href="www.linkedin.com/in/devashish-juyal" class="contact-card" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/juyal-devashish" class="contact-card" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="highlight">Devashish Juyal + Mr. Claude McAnthropic</span>
+                </p>
+                <p class="footer-copyright">
+                    © 2026 All rights reserved (haha)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
