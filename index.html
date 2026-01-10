@@ -141,23 +141,22 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">03</span>
+                <span class="section-tag">02</span>
                 <h2 class="section-title">Featured Projects</h2>
             </div>
             
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="llm">LLM</button>
                 <button class="filter-btn" data-filter="ml">ML</button>
                 <button class="filter-btn" data-filter="nlp">NLP</button>
-                <button class="filter-btn" data-filter="llm">LLM</button>
-                
             </div>
             
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: UMichSLM -->
                 <article class="project-card" data-category="llm">
                     <div class="project-image">
-                        <img src="assets/img/projects/rag-system.jpg" alt="RAG System" onerror="this.parentElement.classList.add('no-image')">
+                        <img src="assets/images/1.png" alt="UMichSLM" onerror="this.parentElement.classList.add('no-image')">
                         <div class="project-overlay">
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -165,11 +164,8 @@
                     </div>
                     <div class="project-content">
                         <span class="project-category">LLM</span>
-                        <h3 class="project-title">UMichSLM</h3>
-                        <p class="project-description">
-                            We are building Univeristy of Michigan's first Small Language Model (~3B parameters) from scratch, implementing
-                            modern day techniques of Language Model training.
-                        </p>
+                        <h3 class="project-title">UMichSLM (April 2026)</h3>
+                        <p class="project-description">We are building University of Michigan's first Small Language Model (~3B parameters) from scratch, implementing modern day techniques of Language Model training.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>HuggingFace</span>
@@ -178,168 +174,288 @@
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 2: ELI-SLM -->
+                <article class="project-card" data-category="llm">
+                    <div class="project-image">
+                        <img src="assets/images/4.png" alt="ELI-SLM" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">NLP / LLM</span>
+                        <h3 class="project-title">Explain it Like I'm a Small Language Model</h3>
+                        <p class="project-description">Multi-stage LLM distillation pipeline (7B→1.5B→0.5B) achieving 22.8% lower perplexity and +8.6% Top-1 accuracy over direct distillation using teacher assistant models.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>Qwen Models</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 3: CRISP -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="assets/images/5.png" alt="CRISP" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">ML / Finance</span>
+                        <h3 class="project-title">CRISP: Contextual Risk-Invariant Stock Prediction</h3>
+                        <p class="project-description">Stock prediction engine using Invariant Risk Minimization achieving 30%+ improvement over ERM baselines on OOD testing by learning causal features across market shifts.</p>
+                        <div class="project-tech">
+                            <span>Finance Data</span>
+                            <span>Time Series</span>
+                            <span>Causal ML</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Sequential Change Detection -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="assets/images/6.png" alt="Sequential Change Detection" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">ML / Statistics</span>
+                        <h3 class="project-title">ML-based Sequential Change Detection</h3>
+                        <p class="project-description">Generalized CuSum method using f-divergence-driven likelihood ratio estimation with near-optimal detection delay. Designed classifier-based sequential detection framework using e-processes and betting-based tests.</p>
+                        <div class="project-tech">
+                            <span>Stat ML</span>
+                            <span>Martingales</span>
+                            <span>Optimization</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: LLM Watermarking -->
+                <article class="project-card" data-category="llm">
+                    <div class="project-image">
+                        <img src="assets/images/7.png" alt="LLM Watermarking" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">LLM / Security</span>
+                        <h3 class="project-title">LLM Watermarking via Sequential Detection</h3>
+                        <p class="project-description">Sequential Monte Carlo testing framework for detecting statistical watermarks in LLM outputs with anytime-valid guarantees. Achieved >95% power with controlled false-positive rate (α ≈ 0.05) using OPT-1.3B on C4 dataset.</p>
+                        <div class="project-tech">
+                            <span>Sequential Tests</span>
+                            <span>Monte-Carlo Sims</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 4: Narrative Surprise -->
+                <article class="project-card" data-category="nlp">
+                    <div class="project-image">
+                        <img src="assets/images/2.png" alt="Narrative Surprise" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">NLP</span>
+                        <h3 class="project-title">Measuring Narrative Surprise with LLMs</h3>
+                        <p class="project-description">End-to-end NLP pipeline using GPT-5 for narrative prediction and plot twist detection via embedding-based semantic divergence and RoBERTa-MNLI contradiction detection.</p>
+                        <div class="project-tech">
+                            <span>GPT-5</span>
+                            <span>RoBERTa</span>
+                            <span>NLI</span>
+                            <span>Embeddings</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: PMON Analytics -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="assets/images/9.png" alt="PMON Analytics" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">ML / Manufacturing</span>
+                        <h3 class="project-title">PMON Analytics</h3>
+                        <p class="project-description">Real-time particle monitoring solution for semiconductor fabs at Micron. Built regression models triggering preventive maintenance at critical thresholds, reducing unplanned downtime and boosting fab yield.</p>
+                        <div class="project-tech">
+                            <span>Regression</span>
+                            <span>Predictive Maintenance</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Quadband Antenna -->
+                <article class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="assets/images/10.png" alt="NAVIC Antenna" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Hardware / ISRO</span>
+                        <h3 class="project-title">Quadband Antenna for NAVIC Satellite</h3>
+                        <p class="project-description">Designed quad-band antenna for L and S band operations for satellite-mounted systems in collaboration with ISRO. Achieved broad bandwidth with reconfigurable characteristics and reliable circuitry.</p>
+                        <div class="project-tech">
+                            <span>EM Design</span>
+                            <span>ML</span>
+                            <span>RF Engineering</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: FANET -->
+                <article class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="assets/images/8.png" alt="FANET" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">ML / Robotics</span>
+                        <h3 class="project-title">ML-based FANET System</h3>
+                        <p class="project-description">Machine learning framework for Flying Ad-hoc Networks enabling autonomous path planning, dynamic resource allocation, and robust communication in constantly changing aerial environments.</p>
+                        <div class="project-tech">
+                            <span>Reinforcement Learning</span>
+                            <span>Path Planning</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 5: NFL Analytics -->
+                <article class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="assets/images/3.png" alt="NFL Analytics" onerror="this.parentElement.classList.add('no-image')">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Data Engineering</span>
+                        <h3 class="project-title">NFL Performance Analytics Database</h3>
+                        <p class="project-description">Normalized SQL database for NFL analytics with 5,000+ performances across 250+ games, featuring Python ETL pipeline and complex multi-table queries for player and team analysis.</p>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>ETL</span>
+                            <span>Data Modeling</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="https://github.com/yourusername" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-github"></i> View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            
+            <div class="skills-compact">
+                <div class="skill-group">
+                    <h4><i class="fas fa-brain"></i> ML & AI</h4>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>scikit-learn</span>
+                        <span>HuggingFace</span>
+                        <span>LLMs</span>
+                        <span>NLP</span>
+                        <span>RAG</span>
+                        <span>LangChain</span>
+                        <span>Transformers</span>
+                        <span>Fine-tuning</span>
+                        <span>Prompt Engineering</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h4><i class="fas fa-code"></i> Languages & Frameworks</h4>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>C++</span>
+                        <span>Vue</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h4><i class="fas fa-database"></i> Data & Infrastructure</h4>
+                    <div class="skill-tags">
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Spark</span>
+                        <span>Snowflake</span>
+                        <span>CUDA</span>
+                        <span>SLURM</span>
+                        <span>MySQL</span>
+                        <span>ETL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group">
+                    <h4><i class="fas fa-cloud"></i> Cloud & MLOps</h4>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>GCP</span>
+                        <span>Weights & Biases</span>
+                        <span>SageMaker</span>
+                        <span>Lambda</span>
+                        <span>EC2</span>
+                        <span>S3</span>
+                        <span>CI/CD</span>
+                        <span>Databricks</span>
+                    </div>
+                </div>
                 
 
-                        <div class="project-card" data-category="nlp">
-                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
-                                <div class="project-overlay">
-                                    <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
-                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-category">NLP / LLM</span>
-                                <h3 class="project-title">Explain it Like I'm a Small Language Model</h3>
-                                <p class="project-description">Multi-stage LLM distillation pipeline (7B→1.5B→0.5B) achieving 22.8% lower perplexity and +8.6% Top-1 accuracy over direct distillation using teacher assistant models.</p>
-                                <div class="project-tech">
-                                    <span>PyTorch</span>
-                                    <span>Transformers</span>
-                                    <span>Knowledge Distillation</span>
-                                    <span>LLM</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Project 2: CRISP -->
-                        <div class="project-card" data-category="ml">
-                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
-                                <div class="project-overlay">
-                                    <a href="#" class="project-link" title="View Paper"><i class="fas fa-file-alt"></i></a>
-                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-category">ML / Finance</span>
-                                <h3 class="project-title">CRISP: Contextual Risk-Invariant Stock Prediction</h3>
-                                <p class="project-description">Stock prediction engine using Invariant Risk Minimization achieving 30%+ improvement over ERM baselines on OOD testing by learning causal features across market shifts.</p>
-                                <div class="project-tech">
-                                    <span>IRM</span>
-                                    <span>PyTorch</span>
-                                    <span>Time Series</span>
-                                    <span>Causal ML</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Project 3: Narrative Surprise -->
-                        <div class="project-card" data-category="nlp">
-                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
-                                <div class="project-overlay">
-                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-category">NLP</span>
-                                <h3 class="project-title">Measuring Narrative Surprise with LLMs</h3>
-                                <p class="project-description">End-to-end NLP pipeline using GPT-5 for narrative prediction and plot twist detection via embedding-based semantic divergence and RoBERTa-MNLI contradiction detection.</p>
-                                <div class="project-tech">
-                                    <span>GPT-5</span>
-                                    <span>RoBERTa</span>
-                                    <span>NLI</span>
-                                    <span>Embeddings</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Project 4: NFL Analytics -->
-                        <div class="project-card" data-category="data">
-                            <div class="project-image no-image" style="background: linear-gradient(135deg, #2d2d2c 0%, #1e1e1d 100%);">
-                                <div class="project-overlay">
-                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-category">Data Engineering</span>
-                                <h3 class="project-title">NFL Performance Analytics Database</h3>
-                                <p class="project-description">Normalized SQL database for NFL analytics with 5,000+ performances across 250+ games, featuring Python ETL pipeline and complex multi-table queries for player and team analysis.</p>
-                                <div class="project-tech">
-                                    <span>SQL</span>
-                                    <span>Python</span>
-                                    <span>ETL</span>
-                                    <span>Data Modeling</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="projects-cta">
-                        <a href="https://github.com/yourusername" class="btn btn-outline" target="_blank">
-                            <i class="fab fa-github"></i> View All on GitHub
-                        </a>
-                    </div>
+            </div>
+            
+            <div class="honors-section">
+                <h4><i class="fas fa-award"></i> Honors & Positions</h4>
+                <div class="honors-list">
+                    <span class="honor-item"><i class="fas fa-trophy"></i> $8K MITACS Fellowship</span>
+                    <span class="honor-item"><i class="fas fa-briefcase"></i> Tech Consultant, ITS UMich</span>
+                    <span class="honor-item"><i class="fas fa-users"></i> AVP Corporate Relations, IEEE</span>
+                    <span class="honor-item"><i class="fas fa-chalkboard-teacher"></i> Grader for EECS-330</span>
+                    <span class="honor-item"><i class="fas fa-chalkboard-teacher"></i> Grader for EECS-455</span>
+                    <span class="honor-item"><i class="fas fa-user-tie"></i> Student Placement Coordinator, MNIT</span>
+                    <span class="honor-item"><i class="fas fa-lightbulb"></i> Advisor to General Secretaries, S&T Societies</span>
+                    <span class="honor-item"><i class="fas fa-cogs"></i> Technical Secretary, S&T Societies</span>
+                    <span class="honor-item"><i class="fas fa-pen"></i> Joint Secretary, Technical Communication House</span>
+                    <span class="honor-item"><i class="fas fa-globe"></i> Webmaster, IEEE RFID</span>
                 </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="skills" id="skills">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-tag">02</span>
-                        <h2 class="section-title">Skills & Expertise</h2>
-                    </div>
-                    
-                    <div class="skills-compact">
-                        <div class="skill-group">
-                            <h4><i class="fas fa-brain"></i> ML & AI</h4>
-                            <div class="skill-tags">
-                                <span>PyTorch</span>
-                                <span>TensorFlow</span>
-                                <span>scikit-learn</span>
-                                <span>HuggingFace</span>
-                                <span>LLMs</span>
-                                <span>NLP</span>
-                                <span>RAG</span>
-                                <span>LangChain</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h4><i class="fas fa-code"></i> Languages & Frameworks</h4>
-                            <div class="skill-tags">
-                                <span>Python</span>
-                                <span>SQL</span>
-                                <span>TypeScript</span>
-                                <span>Flask</span>
-                                <span>Vue</span>
-                                <span>Angular</span>
-                                <span>APIs</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h4><i class="fas fa-database"></i> Data & Infrastructure</h4>
-                            <div class="skill-tags">
-                                <span>NumPy</span>
-                                <span>Pandas</span>
-                                <span>Spark</span>
-                                <span>Hadoop</span>
-                                <span>Snowflake</span>
-                                <span>CUDA</span>
-                                <span>SLURM</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h4><i class="fas fa-tools"></i> Tools & Workflow</h4>
-                            <div class="skill-tags">
-                                <span>Git</span>
-                                <span>Wandb</span>
-                                <span>Agile</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="honors-section">
-                        <h4><i class="fas fa-award"></i> Honors & Positions</h4>
-                        <div class="honors-list">
-                            <span class="honor-item"><i class="fas fa-trophy"></i> $8K MITACS Fellowship</span>
-                            <span class="honor-item"><i class="fas fa-briefcase"></i> Tech Consultant, ITS UMich</span>
-                            <span class="honor-item"><i class="fas fa-users"></i> AVP Corporate Relations, IEEE</span>
-                            <span class="honor-item"><i class="fas fa-chalkboard-teacher"></i> Grader EECS-330, EECS-455</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+    </section>
 
         <!-- Contact Section -->
     <section class="contact" id="contact">
